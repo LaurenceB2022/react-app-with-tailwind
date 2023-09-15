@@ -6,17 +6,7 @@ import {FaGithub, FaLinkedin, FaBars, FaTimes} from 'react-icons/fa'
 
 const NavBar = () => {
     const [nav, setNav] = useState(false)
-    const [isHovering, setIsHovering] = useState(false);
     const handleClick = () => setNav(!nav)
-    const textGitHub = () => {
-        
-        <li className='w-[160px] h-[60px] flex mr-[100px] justify-between items-center text-white'>GitHub</li>
-        
-    }
-
-    const textLinkedIn = () => {
-        <li className='w-[160px] h-[60px] flex ml-[-100px] mr-[100px] text-white justify-between items-center'>LinkedIn</li>
-    }
     
     return (
         <div className="fixed w-full h-[80px] flex justify-between items-center px-10 bg-black text-white-300">
@@ -40,15 +30,20 @@ const NavBar = () => {
             </div>
 
             {/*Social Icons*/}
-            <div className='flex fixed flex-col top-[35%] left-0'>
-                <ul>    
-                    <div onMouseEnter={ () => setIsHovering(true)} onMouseLeave={ () => setIsHovering(false)}></div>
-                        <div>{isHovering && textGitHub}</div>
-                        <a className='text-white' href="https://github.com/LaurenceB2022"><FaGithub className='flex bg-black' size={40}></FaGithub></a>
-                    <div onMouseEnter={ () => setIsHovering(true)} onMouseLeave={ () => setIsHovering(false)}></div>
-                        <div>{isHovering && textLinkedIn}</div>
-                        <a className='text-blue-400'href="https://www.linkedin.com/in/laurence-bartram-690261210/"><FaLinkedin className='flex bg-white' size={40}/></a>
-                    
+            <div className='flex fixed flex-col top-[35%] left-[0px]'>
+                <ul>
+                    <li className='w-[80px] h-[30px] flex right-[100%] ml-[-10px]  text-white justify-between items-center bg-violet-950'>
+                    Socials    </li>   
+                    <li className='w-[160px] h-[60px] flex ml-[-90px]  text-white justify-between items-center hover:ml-[10px] duration-300 bg-zinc-400'>
+                        <a className='text-white flex justify-between items-center w-full' href="https://github.com/LaurenceB2022">
+                            GitHub<FaGithub className=' bg-black' size={50}></FaGithub>
+                        </a>
+                    </li> 
+                    <li className='w-[160px] h-[60px] flex ml-[-90px] text-white justify-between items-center hover:ml-[10px] duration-300 bg-blue-500'>
+                        <a className='text-white flex justify-between items-center w-full'href="https://www.linkedin.com/in/laurence-bartram-690261210/">
+                        LinkedIn<FaLinkedin className='' size={50}/>
+                        </a>
+                    </li>              
                 </ul>
             </div>
             
