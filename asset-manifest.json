@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.dfb752cd.css",
+    "main.js": "/static/js/main.291e79e3.js",
+    "static/js/787.eac42d72.chunk.js": "/static/js/787.eac42d72.chunk.js",
+    "static/media/LB-logo.png": "/static/media/LB-logo.b88306d827804b041b6d.png",
+    "index.html": "/index.html",
+    "main.dfb752cd.css.map": "/static/css/main.dfb752cd.css.map",
+    "main.291e79e3.js.map": "/static/js/main.291e79e3.js.map",
+    "787.eac42d72.chunk.js.map": "/static/js/787.eac42d72.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dfb752cd.css",
+    "static/js/main.291e79e3.js"
+  ]
+}
