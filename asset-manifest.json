@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/web-app/static/css/main.dfb752cd.css",
-    "main.js": "/web-app/static/js/main.00517fbc.js",
-    "static/js/787.38de3e28.chunk.js": "/web-app/static/js/787.38de3e28.chunk.js",
-    "static/media/LB-logo.png": "/web-app/static/media/LB-logo.b88306d827804b041b6d.png",
-    "index.html": "/web-app/index.html",
-    "main.dfb752cd.css.map": "/web-app/static/css/main.dfb752cd.css.map",
-    "main.00517fbc.js.map": "/web-app/static/js/main.00517fbc.js.map",
-    "787.38de3e28.chunk.js.map": "/web-app/static/js/787.38de3e28.chunk.js.map"
+    "main.css": "/web-profile/static/css/main.dfb752cd.css",
+    "main.js": "/web-profile/static/js/main.d94efefc.js",
+    "static/js/787.38de3e28.chunk.js": "/web-profile/static/js/787.38de3e28.chunk.js",
+    "static/media/LB-logo.png": "/web-profile/static/media/LB-logo.b88306d827804b041b6d.png",
+    "index.html": "/web-profile/index.html",
+    "main.dfb752cd.css.map": "/web-profile/static/css/main.dfb752cd.css.map",
+    "main.d94efefc.js.map": "/web-profile/static/js/main.d94efefc.js.map",
+    "787.38de3e28.chunk.js.map": "/web-profile/static/js/787.38de3e28.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dfb752cd.css",
-    "static/js/main.00517fbc.js"
+    "static/js/main.d94efefc.js"
   ]
 }
