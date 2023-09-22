@@ -1,7 +1,7 @@
 {
   "name": "web-profile",
   "version": "0.1.0",
-  "homepage": "https://laurenceb2022.github.io/web-profile",
+  "homepage": "https://laurenceb2022.github.io/web-profile/",
   "private": true,
   "dependencies": {
     "gh-pages": "^6.0.0",
