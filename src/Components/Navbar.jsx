@@ -24,9 +24,9 @@ const NavBar = () => {
             </div>
 
             {/*Hamburger */}
-            <div onClick={handleClick} className='z-10'>
+            <div onClick={handleClick} className='z-10 top-[50%]'>
                 {!nav ? <FaBars/> : <FaTimes/>}
-                <FaBars />
+                
             </div>
 
             {/*Social Icons*/}
