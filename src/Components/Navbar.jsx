@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
-import logo from '../assets/LB-logo.png'
+import logo from '../assets/Rutgers_Logo.png'
 import {FaGithub, FaLinkedin, FaBars, FaTimes} from 'react-icons/fa'
+import {Link} from 'react-router-dom';
 
 
 
@@ -9,19 +10,22 @@ const NavBar = () => {
     const handleClick = () => setNav(!nav)
     
     return (
-        <div className="fixed w-full h-[80px] flex justify-between items-center px-10 bg-black text-white-300">
+        <div className="fixed top-0 w-full h-[70px] flex justify-between items-center px-10  border-b text-white-300 bg-white border-gray-700">
             <div>
                 <img src={logo} alt="LB Logo" style={{width: '50px'}}></img>
             </div>
 
-            <div>
-                <ul className='hidden md:flex'>
-                    <li>Home</li>
-                    <li>Skills</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
+            
+                <ul className='flex flex-row px-10'>
+                    <li><Link to='/Home'>Home</Link></li>
+                    <li><Link to='/Skills'>Skills</Link></li>
+                    <li><Link to='/Projects'>Projects</Link></li>
+                    <li><Link to='/AboutMe'>About Me</Link></li>
+                    <li><Link to='/Contact'>Contact</Link></li>
+                    <li><Link to='/Resume'>Resume</Link></li>
+                    <li><Link to='/Chat'>Chat</Link></li>
+                    
                 </ul>
-            </div>
 
             {/*Hamburger */}
             <div onClick={handleClick} className='z-10 top-[50%]'>
@@ -40,21 +44,12 @@ const NavBar = () => {
                         </a>
                     </li> 
                     <li className='w-[160px] h-[60px] flex ml-[-90px] text-white justify-between items-center hover:ml-[10px] duration-300 bg-blue-500'>
-                        <a className='text-white flex justify-between items-center w-full'href="https://www.linkedin.com/in/laurence-bartram-690261210/">
+                        <a className='text-white flex justify-between items-center w-full'href="https://www.linkedin.com/in/laurencebartram/">
                         LinkedIn<FaLinkedin className='' size={50}/>
                         </a>
                     </li>              
                 </ul>
             </div>
-            
-            {/*Mobile Menu*/}
-            <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-full bg-black flex flex-col justify-center items-center'}>
-                <li className='py-6 text-4xl'>Home</li>
-                <li className='py-6 text-4xl'>Skills</li>
-                <li className='py-6 text-4xl'>Projects</li>
-                <li className='py-6 text-4xl'>Contact</li>
-            </ul>
-
         </div>
 
         
