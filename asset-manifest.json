@@ -1,16 +1,23 @@
 {
   "files": {
-    "main.css": "/web-profile/static/css/main.dfb752cd.css",
-    "main.js": "/web-profile/static/js/main.d94efefc.js",
+    "main.css": "/web-profile/static/css/main.675e7d8c.css",
+    "main.js": "/web-profile/static/js/main.5c7624c7.js",
     "static/js/787.38de3e28.chunk.js": "/web-profile/static/js/787.38de3e28.chunk.js",
-    "static/media/LB-logo.png": "/web-profile/static/media/LB-logo.b88306d827804b041b6d.png",
+    "static/media/pdf.worker.min.js": "/web-profile/static/media/pdf.worker.min.66d629c103e1657d78b8.js",
+    "static/media/headshot cropped.jpg": "/web-profile/static/media/headshot cropped.7fb2f71b6d1045ef0ece.jpg",
+    "static/media/Laurence_s_Resume.pdf": "/web-profile/static/media/Laurence_s_Resume.2167d1cf01b6ad7fb294.pdf",
+    "static/media/Python-logo-notext.svg.png": "/web-profile/static/media/Python-logo-notext.svg.82efb64f8698a267f8bf.png",
+    "static/media/Java-Emblem.jpg": "/web-profile/static/media/Java-Emblem.bc7a3325b6ee01ddcab8.jpg",
+    "static/media/Rutgers_Logo.png": "/web-profile/static/media/Rutgers_Logo.afdfce6a6084f0f0e312.png",
+    "static/media/Profile-1.pdf": "/web-profile/static/media/Profile-1.b59e9769f95cbdab4534.pdf",
+    "static/media/logo.svg": "/web-profile/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/web-profile/index.html",
-    "main.dfb752cd.css.map": "/web-profile/static/css/main.dfb752cd.css.map",
-    "main.d94efefc.js.map": "/web-profile/static/js/main.d94efefc.js.map",
+    "main.675e7d8c.css.map": "/web-profile/static/css/main.675e7d8c.css.map",
+    "main.5c7624c7.js.map": "/web-profile/static/js/main.5c7624c7.js.map",
     "787.38de3e28.chunk.js.map": "/web-profile/static/js/787.38de3e28.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dfb752cd.css",
-    "static/js/main.d94efefc.js"
+    "static/css/main.675e7d8c.css",
+    "static/js/main.5c7624c7.js"
   ]
 }
