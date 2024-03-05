@@ -1,6 +1,6 @@
 import React from 'react'
 import java from '../assets/Java-Emblem.jpg'
-import reactlogo from '../logo.svg'
+import reactlogo from '../assets/ReactJS.png'
 import pythonlogo from '../assets/Python-logo-notext.svg.png'
 import VSC from '../assets/Visual_Studio_Code_1.35_icon.svg.png'
 import SQL from '../assets/Sql_data_base_with_logo.png'
