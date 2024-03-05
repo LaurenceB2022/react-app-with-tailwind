@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
-import pdf from '../Components/Laurence_s_Resume.pdf'
 import pdf2 from '../assets/TestResume.pdf'
 import { PDFViewer } from '@react-pdf/renderer';
 
