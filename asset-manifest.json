@@ -1,12 +1,11 @@
 {
   "files": {
     "main.css": "/web-profile/static/css/main.1efffb45.css",
-    "main.js": "/web-profile/static/js/main.e6dd33e8.js",
+    "main.js": "/web-profile/static/js/main.ab39df77.js",
     "static/js/787.38de3e28.chunk.js": "/web-profile/static/js/787.38de3e28.chunk.js",
     "static/media/URWCLogo.png": "/web-profile/static/media/URWCLogo.f000f8cd970661c2b974.png",
     "static/media/pdf.worker.min.js": "/web-profile/static/media/pdf.worker.min.66d629c103e1657d78b8.js",
     "static/media/headshot cropped.jpg": "/web-profile/static/media/headshot cropped.7fb2f71b6d1045ef0ece.jpg",
-    "static/media/Laurence_s_Resume.pdf": "/web-profile/static/media/Laurence_s_Resume.2167d1cf01b6ad7fb294.pdf",
     "static/media/Python-logo-notext.svg.png": "/web-profile/static/media/Python-logo-notext.svg.82efb64f8698a267f8bf.png",
     "static/media/TestResume.pdf": "/web-profile/static/media/TestResume.8ae92d7fb65084e7b1a9.pdf",
     "static/media/Sql_data_base_with_logo.png": "/web-profile/static/media/Sql_data_base_with_logo.85fb38d6773862e917f4.png",
@@ -23,11 +22,11 @@
     "static/media/RUIT.png": "/web-profile/static/media/RUIT.193c37c4a9dbf119615f.png",
     "index.html": "/web-profile/index.html",
     "main.1efffb45.css.map": "/web-profile/static/css/main.1efffb45.css.map",
-    "main.e6dd33e8.js.map": "/web-profile/static/js/main.e6dd33e8.js.map",
+    "main.ab39df77.js.map": "/web-profile/static/js/main.ab39df77.js.map",
     "787.38de3e28.chunk.js.map": "/web-profile/static/js/787.38de3e28.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1efffb45.css",
-    "static/js/main.e6dd33e8.js"
+    "static/js/main.ab39df77.js"
   ]
 }
