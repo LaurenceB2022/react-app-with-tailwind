@@ -1,8 +1,8 @@
 import React from 'react'
 import { useState } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
-import pdf from './Laurence_s_Resume.pdf'
-import pdf2 from '../assets/Profile-1.pdf'
+import pdf from '../Components/Laurence_s_Resume.pdf'
+import pdf2 from '../assets/TestResume.pdf'
 import { PDFViewer } from '@react-pdf/renderer';
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
@@ -19,15 +19,18 @@ const Resume = () => {
     }
 
     return (
-        <div className='w-full h-screen bg-black'>
-            <div className='h-8 w-8 flex flex-col justify-center items-center bg-slate-400'>
-                <PDFViewer>
-                    <Document onLoadSuccess={onDocumentLoadSuccess}>
-                        <Page pageNumber={pageNumber} />
-                    </Document>
-                </PDFViewer>
-                
+        <div className='w-full pt-20 h-full bg-black overflow-auto flex flex-col justify-center items-center'>
+            
+            <div className='w-full h-fit pd-10 mt-10 flex items-center justify-center'>
+                <iframe src={pdf2} width='700em' height='850em'/>
             </div>
+            
+            {/*<div className=' h-[50vh] w-[50vh] bg-slate-400'>
+                
+                <Document file={pdf2} onLoadSuccess={onDocumentLoadSuccess}>
+                    <Page pageNumber={1} />
+                </Document>            
+            </div> */}
         </div>
     )
 }

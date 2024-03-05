@@ -10,20 +10,20 @@ const NavBar = () => {
     const handleClick = () => setNav(!nav)
     
     return (
-        <div className="fixed top-0 w-full h-[70px] flex justify-between items-center px-10  border-b text-white-300 bg-white border-gray-700">
+        <div className="fixed top-0 w-full h-[70px] flex justify-between items-center px-10  border-b text-white-300 bg-gradient-to-r from-purple-900 to-blue-900 border-gray-700">
             <div>
                 <img src={logo} alt="LB Logo" style={{width: '50px'}}></img>
             </div>
 
             
                 <ul className='flex flex-row px-10'>
-                    <li><Link to='/Home'>Home</Link></li>
-                    <li><Link to='/Skills'>Skills</Link></li>
-                    <li><Link to='/Projects'>Projects</Link></li>
-                    <li><Link to='/AboutMe'>About Me</Link></li>
-                    <li><Link to='/Contact'>Contact</Link></li>
-                    <li><Link to='/Resume'>Resume</Link></li>
-                    <li><Link to='/Chat'>Chat</Link></li>
+                    <li id="home" className='active:text-white'><Link to='/Home' className='active:text-white' activeClassName="active">Home</Link></li>
+                    <li id="skills"><Link to='/Skills' activeClassName="active">Skills</Link></li>
+                    <li id="projects"><Link to='/Projects' activeClassName="active">Projects</Link></li>
+                    {/*<li><Link to='/AboutMe'>About Me</Link></li>*/}
+                    <li id="contact"><Link to='/Contact' activeClassName="active">Contact</Link></li>
+                    <li id="resume"><Link to='/Resume' activeClassName="active" >Resume</Link></li>
+                    {/*<li><Link to='/Chat'>Chat</Link></li>*/}
                     
                 </ul>
 

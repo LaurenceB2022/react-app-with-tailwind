@@ -23,3 +23,6 @@
   }
 }
 
+.active{
+  @apply bg-white;
+}

@@ -20,9 +20,9 @@ function App() {
         
         <BrowserRouter basename='/web-profile'>
           
-            <NavBar/>
+            
             <Router/>
-           
+            <NavBar/>
         </BrowserRouter>    
         
   );
