@@ -1,8 +1,9 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState, useRef  } from 'react'
 import emailjs from '@emailjs/browser';
 
 const ContactMe = () => {
+    const form2 = useRef();
 
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [stateMessage, setStateMessage] = useState(null);
@@ -12,13 +13,14 @@ const ContactMe = () => {
 
     const form = {
         name: '',
+        subject: '',
         email: '',
         message: ''
     };
     const [data, setData] = useState(form);
 
     const resetForm = () =>{
-        setData({name: '', email: '', subject: '', message: ''})
+        setData({name: '', subject: '', email: '', message: ''})
     }
 
     const handleInput = (e) => {
@@ -31,17 +33,20 @@ const ContactMe = () => {
         setIsSubmitting(true);
         const validEmail = new RegExp('^[a-zA-Z0-9._:$!%-]+@[a-zA-Z0-9.-]+.[a-zA-Z]$')
         {/*Email address is valid and all fields are filled in */}
-        if(validEmail.test(data.email) && data.message !== null && data.name !== null){
-            emailjs.sendForm(
+        if(validEmail.test(data.email) && data.message !== null && data.name !== null && data.subject !== null){
+            console.log(form)
+            emailjs.send(
                 service_ID,
                 template_ID,
-                form,
+                data,
                 publicKey
             )
             .then(
              
                 () => {
                     console.log('SUCCESS!');
+                    console.log(data)
+                    alert("Message Successfully Sent!")
                 },
                 (error) => {
                     console.log('FAILED...', error.text);
@@ -74,20 +79,20 @@ const ContactMe = () => {
                 </div>
                 
                 <div className="mx-auto border-2 border-white  mt-2 mb-2 w-full max-w-[550px] p-5 bg-purple-300 bg-opacity-50 rounded-md">
-                    <p className='text-white'>Full Name</p>
+                <p className='text-white'>Full Name</p>
                     <input type="text" name="name" id="name" placeholder="Full Name" value={data.name} onChange={handleInput}
-                    className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none"
+                        className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none"
                     />
                     <p className='text-white'>Email Address</p>
                     <input type="text" name="email" id="email" placeholder="Email" value={data.email} onChange={handleInput}
                     className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none"></input>
-                    {/*<p className='text-white'>Subject</p>
-                    <input type="text" name="subject" id="subject" placeholder="Subject" value={data.subject} onChange={handleInput}
-                    className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none"></input>
-                    */}
+                    <p className='text-white'>Subject</p>
+                        <input type="text" name="subject" id="subject" placeholder="Subject" value={data.subject} onChange={handleInput}
+                        className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none"></input>
+                    
                     <p className='text-white'>Message</p>
                     <textarea rows="3" name="message" id="message" placeholder="Message" value={data.message} onChange={handleInput}
-                    className="w-full h-[10em] resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none"
+                        className="w-full h-[10em] resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none"
                     />
                 </div>
                 <button className='bg-gray-800 text-xl border border-gray-500 rounded-xl font-bold px-6 pb-2 pt-2' onClick={handleSubmit}>Send</button>

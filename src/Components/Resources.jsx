@@ -19,6 +19,19 @@ const Resources = () => {
                         <p>, &nbsp; MuleSoft, 7 Nov. 2022, https://on.soundcloud.com/hbFLB1BXwBsLs8Vs7. </p>
                         
                     </div>
+                    <div className="flex flex-row flex-wrap text-lg text-black rounded card card-compact w-[100%] h-full bg-white shadow-md mb-5 mt-5 px-20 pt-5 pb-5">
+                        <p>Watmore, Jason. “REACT + Fetch - HTTP GET Request Examples.”</p>
+                        <p className='italic'>Jason Watmore's Blog, </p>
+                        <p>&nbsp; 12 May 2020, jasonwatmore.com/post/2020/01/27/react-fetch-http-get-request-examples. </p>
+                        
+                    </div>
+                    <div className="flex flex-row flex-wrap text-lg text-black rounded card card-compact w-[100%] h-full bg-white shadow-md mb-5 mt-5 px-20 pt-5 pb-5">
+                        <p>Coyier, Chris. “A Complete Guide to Flexbox: CSS-Tricks.” </p>
+                        <p className='italic'>CSS-Tricks</p>
+                        <p>, &nbsp; 9 Dec. 2022, css-tricks.com/snippets/css/a-guide-to-flexbox/. </p>
+                        
+                    </div>
+
                 </div>
             </div>
 
