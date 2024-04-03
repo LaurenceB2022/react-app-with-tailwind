@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import NavBar from './Components/Navbar.jsx'
 import {BrowserRouter} from 'react-router-dom'
 import Router from './Components/Router.jsx'
@@ -16,6 +16,24 @@ const ThisContext = (props) => {
 
 /* Driver function, encapsulates all pages and contexts. */
 function App() {
+
+  /*
+  //Implement with backend later 
+  const callBackendAPI = async () => {
+      const response = await fetch('/server')
+      const body = await response.json()
+      if (response.status !== 200) {
+        throw Error(body.message)
+      }
+      return body
+  }
+    
+    useEffect(() => {
+      callBackendAPI()
+      .then(res => console.log(res))
+      .catch(err => console.error(err))
+    }, []) */
+
   return (
         
         <BrowserRouter basename='/web-profile'>

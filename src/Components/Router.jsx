@@ -6,6 +6,7 @@ import Resume from './Resume.jsx'
 import ContactMe from './ContactMe.jsx'
 import AboutMe from './AboutMe.jsx'
 import Skills from './Skills.jsx'
+import Resources from './Resources.jsx'
 
 const Router = () => {
     return(
@@ -19,6 +20,7 @@ const Router = () => {
                 <Route path='Resume' element={<Resume/>}/>
                 <Route path='AboutMe' element={<AboutMe/>}/>
                 <Route path='Skills' element={<Skills/>}/>
+                <Route path='Resources' element={<Resources/>}/>
             </Route>
         </Routes>
     )

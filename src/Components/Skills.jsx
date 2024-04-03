@@ -166,6 +166,47 @@ const Skills = () => {
                         </div>
                     </div>
                 </div>
+                <div id="text-explaination" class=' flex flex-col justify-center items-center mx-5 mt-5 mb-5 '>
+                    <ul className='text-xl  text-black'>
+                        <li className='rounded card card-compact w-[100%] h-full bg-white shadow-md mb-5 mt-5 px-20 pt-5 pb-5' >2.5 years of experience using the ticketing application ServiceNow</li>
+                        <li className='rounded card card-compact w-[100%] h-full bg-white shadow-md mb-5 mt-5 px-20 pt-5 pb-5'> 1 year of experience using Agile software development methodologies </li>
+                        <li className='rounded card card-compact w-[100%] h-full bg-white shadow-md mb-5 mt-5 px-20 pt-5 pb-5 '>2.5 years of experience using the cloud-based team communication platform Slack</li>
+                        <li className='rounded card card-compact w-[100%] h-full bg-white shadow-md mb-5 mt-5 px-20 pt-5 pb-5' >4 years of experience working in customer service</li>
+                    </ul>
+                </div>
+            </div>
+            <div className='space-y-5 flex flex-col justify-center items-center mx-auto'>
+                <div className='text-3xl text-white font-extrabold px-2'>
+                    <p>Helpful Resources for Computer Science</p>
+                </div>
+                <div className='rounded border-white border-2 px-20 pt-5 pb-5 w-full flex flex-col items-center'>
+                    <h1 className='mb-5 text-2xl text-white'>Depth First Search and Breadth First Search</h1>
+                    <iframe 
+                        src="https://www.youtube.com/embed/TIbUeeksXcI" 
+                        frameborder='0'
+                        className="h-[30em] w-full"
+                        allow='autoplay; encrypted-media'
+                        allowfullscreen
+                        title='video'
+                    />
+                    <div className=' mx-5 mt-5 mb-5 '>
+                        <h2 className='px-5 pt-5 pb-5 bg-white shadow-md text-black rounded'>Jarvis goes over the logic and implementation of the searching algorithms DFS (Depth First Search) and BFS (Breadth First Search). The
+                        DFS algorithm can be used to backtrack searches on data structures such as graphs, nodes, adjacency lists, etc. 
+                        The BFS algorithm is used to find if a path exists between objects in a graph or adjacency list. The Java code for both algorithms is presented and dissected here.</h2>
+                    </div>
+                </div>
+                <div className='rounded border-white border-2 px-20 pt-5 pb-5 w-full flex flex-col items-center'>
+                    <h1 className='mb-5 text-2xl text-white'>API Usage</h1>
+                    <iframe className="rounded border-blue-400" width="75%" height="100em" scrolling="no" frameborder="no" allow="autoplay" 
+                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1378517041&color=93c4fd&auto_play=false&hide_related=true&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=false">
+
+                    </iframe>
+                    <div className=' mx-5 mt-5 mb-5 '>
+                        <h2 className='px-5 pt-5 pb-5 bg-white shadow-md text-black rounded'>Mike and Matt's podcast episode discusses some of the best practices when implementing APIs (Application programming interfaces) in web applications. Mike recounts some of his history over the decades developing websites, and relays some of the best RESTful techniques he has learned to seamlessly receive and process information between external clients.</h2>
+                    </div>
+                   
+                </div>
+                
             </div>
         </div>
     )
